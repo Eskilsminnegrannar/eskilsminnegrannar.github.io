@@ -5,16 +5,16 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
-    <ChakraProvider theme={theme}>
-      <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </BrowserRouter>
-    </ChakraProvider>
-  );
+    return (
+        <ChakraProvider theme={theme}>
+            <Navbar />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                </Routes>
+            </BrowserRouter>
+        </ChakraProvider>
+    );
 }
 
 export default App;
