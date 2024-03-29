@@ -65,30 +65,30 @@ const HomePage = () => {
                             <Stack spacing={'60px'}>
                                 <PictureCard
                                     image="logo.png"
-                                    text="Vi boende rör oss mycket utomhus och vi organiserar nattvandringar vid behov. Vi använder oss av modern digital teknik för snabb kommunikation oss grannar emellan och vi håller tät dialog med Helsingborgs kommunpolis."
+                                    text="Vi boende rör oss mycket utomhus och vi organiserar nattvandringar vid behov. Vi håller tät dialog med Helsingborgs kommunpolis och vår områdespolis."
                                 />
                                 <PictureCard
                                     image="grannar.png"
-                                    text="På Eskilsminne har vi en aktiv grannsamverkan i tätt samarbete med Polisen, Kommunen och Länsförsäkringar Skåne. Konceptet heter Grannar mot brott."
+                                    text="Vår aktiva grannsamverkan på Eskilsminne sker i tätt samarbete med Polisen, Kommunen och Länsförsäkringar Skåne. Konceptet heter Grannar mot brott."
                                 />
                                 <PictureCard
                                     image="coyards.png"
-                                    text="Vi som ansvarar för grannsamverkan i området kommer att använda oss av en kommunikationsplattform som heter Coyards. Målet är att effektivisera kommunikationen och göra det brottsförebyggande arbetet ännu bättre."
+                                    text="Vi använder oss av modern digital teknik för snabb kommunikation oss grannar emellan. Coyards effektiviserar vår kommunikation och gör det brottsförebyggande arbetet ännu bättre."
                                 />
                             </Stack>
                         ) : (
                             <HStack spacing={'60px'} marginTop={10}>
                                 <PictureCard
                                     image="logo.png"
-                                    text="Vi boende rör oss mycket utomhus och vi organiserar nattvandringar vid behov. Vi använder oss av modern digital teknik för snabb kommunikation oss grannar emellan och vi håller tät dialog med Helsingborgs kommunpolis."
+                                    text="Vi boende rör oss mycket utomhus och vi organiserar nattvandringar vid behov. Vi håller tät dialog med Helsingborgs kommunpolis och vår områdespolis."
                                 />
                                 <PictureCard
                                     image="grannar.png"
-                                    text="På Eskilsminne har vi en aktiv grannsamverkan i tätt samarbete med Polisen, Kommunen och Länsförsäkringar Skåne. Konceptet heter Grannar mot brott."
+                                    text="Vår aktiva grannsamverkan på Eskilsminne sker i tätt samarbete med Polisen, Kommunen och Länsförsäkringar Skåne. Konceptet heter Grannar mot brott."
                                 />
                                 <PictureCard
                                     image="coyards.png"
-                                    text="Vi som ansvarar för grannsamverkan i området kommer att använda oss av en kommunikationsplattform som heter Coyards. Målet är att effektivisera kommunikationen och göra det brottsförebyggande arbetet ännu bättre."
+                                    text="Vi använder oss av modern digital teknik för snabb kommunikation oss grannar emellan. Coyards effektiviserar vår kommunikation och gör det brottsförebyggande arbetet ännu bättre."
                                 />
                             </HStack>
                         )}
