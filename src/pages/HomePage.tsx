@@ -10,9 +10,14 @@ import {
 } from '@chakra-ui/react';
 import PictureCard from '../components/PictureCard';
 
-const Ball = () => {
+const Ball = (isMobile: boolean) => {
     return (
-        <Icon viewBox="0 0 50 50" color="white" w={6} h={6}>
+        <Icon
+            viewBox="0 0 50 50"
+            color="white"
+            w={isMobile ? 4 : 6}
+            h={isMobile ? 4 : 6}
+        >
             <path
                 fill="currentColor"
                 d="M 25, 25 m -20, 0 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0"
@@ -22,7 +27,7 @@ const Ball = () => {
 };
 
 const HomePage = () => {
-    const isVertical = useBreakpointValue({ base: true, md: false });
+    const isMobile = useBreakpointValue({ base: true, md: false }) || false;
 
     return (
         <Box width="100%">
@@ -48,8 +53,9 @@ const HomePage = () => {
                     textColor={'white'}
                     marginTop={5}
                 >
-                    Vi ser <Ball /> Vi noterar {isVertical ? <br /> : <Ball />}{' '}
-                    Vi reagerar <Ball /> Vi agerar
+                    Vi ser {Ball(isMobile)} Vi noterar{' '}
+                    {isMobile ? <br /> : Ball(isMobile)} Vi reagerar{' '}
+                    {Ball(isMobile)} Vi agerar
                 </Heading>
             </Box>
             <Container maxW="container.xl">
@@ -61,7 +67,7 @@ const HomePage = () => {
                         py={{ base: 20, md: 28 }}
                     >
                         {/* Conditionally render HStack based on screen size */}
-                        {isVertical ? (
+                        {isMobile ? (
                             <Stack spacing={'60px'}>
                                 <PictureCard
                                     image="logo.png"
